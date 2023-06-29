@@ -18,14 +18,22 @@ class Node2VecEmbeddings:
         self.node_mapping = {}
         self.edge_df = None
         self.nodes_df = None
+        self.ns = None
 
-    def load_turtle_graph(self, graph_file):
+    def load_turtle_graph(self, graph_file, namespace):
         print("Loading RDF graph...")
+        self.ns = Namespace(namespace)
         self.graph = Graph()
         self.graph.parse(graph_file, format='turtle')
         return self.graph
 
-    def encode_graph(self):
+    def encode_graph(self, filterNodeTypes=None):
+        """Encode the RDF graph as a node and edge DataFrame.
+        
+        Args:
+            filterNodeTypes (list): List of node types to filter out. If None, all nodes are included.
+        """
+
         print("Encoding RDF graph...")
         if self.graph is None:
             raise Exception("No graph loaded. Load a graph first using load_turtle_graph()")
@@ -39,17 +47,19 @@ class Node2VecEmbeddings:
                 if node not in self.node_mapping:
                     # Find node type
                     node_type = self.graph.value(node, RDF.type)
+                    if type is not None and node_type in filterNodeTypes:
+                        break # one of the nodes is not of the specified type, we skip this triple
                     # Update mapping
                     self.node_mapping[node] = node_count
                     node_count += 1
                     # Add node to DataFrame
                     nodes_data.append((node, node_type))
-
-            # Add edge to DataFrame
-            source = self.node_mapping.get(s)
-            target = self.node_mapping.get(o)
-            edge_type = p
-            edge_data.append((source, target, edge_type))
+            else:
+                # Add edge to DataFrame
+                source = self.node_mapping.get(s)
+                target = self.node_mapping.get(o)
+                edge_type = p
+                edge_data.append((source, target, edge_type))
 
         self.edge_df = pd.DataFrame(edge_data, columns=["Source", "Target", "Type"])
         self.nodes_df = pd.DataFrame(nodes_data, columns=["Node", "Type"])
