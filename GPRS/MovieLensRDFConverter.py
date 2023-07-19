@@ -1,3 +1,4 @@
+import csv
 from rdflib import Graph, Namespace, Literal, URIRef
 from rdflib.namespace import RDF, RDFS
 from tqdm import tqdm
@@ -119,9 +120,21 @@ class MovieLensRDFConverter:
         # Generate the visualization using GraphViz
         call(["dot", "-Tpng", f"{self.data_dir}/graph.dot", "-o", f"{self.data_dir}/graph.png"])
 
+    def get_graph(self):
+        return self.graph
+    
+    def rdf_to_csv(self, filename, graph=None):
+        if graph is None:
+            graph = self.graph
+        with open(filename, 'w', newline='') as csvfile:
+            writer = csv.writer(csvfile)
+            for s, p, o in graph:
+                writer.writerow([str(s), str(p), str(o)])
+
 if __name__ == "__main__":
     converter = MovieLensRDFConverter("./data/ml-100k")
-    # rdf_graph = converter.convert()
-    # rdf_graph.serialize(f"{location}/graph.turtle", format="turtle")
-    # converter.load_graph("graph.turtle")
-    converter.visualize()
+    #rdf_graph = converter.convert()
+    #rdf_graph.serialize("./data/ml-100k/graph.turtle", format="turtle")
+    converter.load_graph("graph.turtle")
+    converter.rdf_to_csv("./data/ml-100k/graph.csv")
+    #converter.visualize()
