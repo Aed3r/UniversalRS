@@ -126,7 +126,7 @@ class MovieLensRDFConverter:
     def rdf_to_csv(self, filename, graph=None):
         if graph is None:
             graph = self.graph
-        with open(filename, 'w', newline='') as csvfile:
+        with open(filename, 'w', newline='', encoding="utf-8") as csvfile:
             writer = csv.writer(csvfile)
             for s, p, o in graph:
                 writer.writerow([str(s), str(p), str(o)])
