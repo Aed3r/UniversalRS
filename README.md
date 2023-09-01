@@ -41,3 +41,5 @@ python.exe .\RecDatasets\conversion_tools\run.py --dataset ml-1m --input_path .\
     python .\RecDatasets\conversion_tools\add_knowledge.py --dataset ml-1m --inter_file ./data/ml-1m/inter/ml-1m.inter --kg_data_path ./data/MovieLens-KG --output_path ./data/ml-1m/kg --hop 1
     ```
 
+Create a RSA key and put the id_rsa file in the root directory of the project:
+http://www.linuxproblem.org/art_9.html
