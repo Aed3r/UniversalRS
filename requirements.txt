@@ -10,3 +10,4 @@ matplotlib==3.7.1
 gensim==6.3.0
 pykeen==1.10.1
 rdflib==6.3.2
+sparqlwrapper
