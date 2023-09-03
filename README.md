@@ -43,3 +43,8 @@ python.exe .\RecDatasets\conversion_tools\run.py --dataset ml-1m --input_path .\
 
 Create a RSA key and put the id_rsa file in the root directory of the project:
 http://www.linuxproblem.org/art_9.html
+
+Start virtuoso endpoint (http://localhost:8890/sparql, conductor at http://localhost:8890/conductor/ (username: dba, password: password)):
+```
+sudo COLLECTION_URI=https://databus.dbpedia.org/dbpedia/collections/latest-core  VIRTUOSO_ADMIN_PASSWD=password docker-compose up
+```

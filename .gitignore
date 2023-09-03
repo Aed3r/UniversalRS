@@ -2,3 +2,4 @@ data/*
 res/*
 id_rsa
 dbpedia/*
+virtuoso-sparql-endpoint-quickstart/*
