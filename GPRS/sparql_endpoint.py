@@ -1,6 +1,7 @@
 from SPARQLWrapper import SPARQLWrapper, JSON, TURTLE
 import requests
 import json
+from rdflib import Graph, URIRef
 
 class SPARQLEndpoint:
     def __init__(self, endpoint_url):
@@ -128,6 +129,36 @@ class SPARQLEndpoint:
             related_items.append(result["related"]["value"])
 
         return related_items
+    
+    @staticmethod
+    def filter_rdf_triples(rdf_data, format, allowed_predicates):
+        """
+        Filters the RDF triples of a given RDF data based on a list of allowed predicates.
+
+        Args:
+            rdf_data (str): RDF data as a string.
+            format (str): The format of the RDF data (e.g., 'turtle', 'xml', 'n3', etc.).
+            allowed_predicates (list): List of URIs of allowed predicates.
+
+        Returns:
+            str: Filtered RDF data as a string in the same format as the input.
+        """
+        # Parse the original RDF data
+        g = Graph()
+        g.parse(data=rdf_data, format=format)
+
+        # Create a new graph to store the filtered triples
+        filtered_g = Graph()
+
+        # Filter the triples
+        for s, p, o in g:
+            if str(p) in allowed_predicates:
+                filtered_g.add((s, p, o))
+
+        # Serialize the filtered graph to a string
+        filtered_rdf_data = filtered_g.serialize(format=format, encoding="utf-8")
+        
+        return filtered_rdf_data
 
 if __name__ == "__main__":
     endpoint = SPARQLEndpoint("http://dbpedia.org/sparql")
@@ -142,12 +173,18 @@ if __name__ == "__main__":
     print(uri)
 
     # test describe
-    endpoint.write_resource_to_file(uri, "asturias.ttl")
+    item = endpoint.describe_resource(uri)
+    # endpoint.write_resource_to_file(uri, "asturias.ttl")
 
     # test related items
-    related_items = endpoint.get_related_items(uri)
-    print("Related items: ")
-    for item in related_items:
-        print(" - " + item)
+    # related_items = endpoint.get_related_items(uri)
+    # print("Related items: ")
+    # for item in related_items:
+    #     print(" - " + item)
+
+    # test filtering
+    filtered_data = endpoint.filter_rdf_triples(item, "turtle", ["http://dbpedia.org/ontology/abstract"])
+    with open("asturias_filtered.ttl", "wb") as file:
+        file.write(filtered_data)
 
     endpoint.disconnect()

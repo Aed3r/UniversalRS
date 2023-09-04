@@ -48,3 +48,6 @@ Start virtuoso endpoint (http://localhost:8890/sparql, conductor at http://local
 ```
 sudo COLLECTION_URI=https://databus.dbpedia.org/dbpedia/collections/latest-core  VIRTUOSO_ADMIN_PASSWD=password docker-compose up
 ```
+
+Account storage size:
+`quota -s`

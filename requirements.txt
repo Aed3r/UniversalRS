@@ -6,3 +6,4 @@ rdflib
 pykeen
 paramiko
 sparqlwrapper
+redis
