@@ -1,6 +1,6 @@
-##Towards a Universal Recommender System: A Linked Open Data Approach
+## Towards a Universal Recommender System: A Linked Open Data Approach
 
-#This repository contains the code used in the paper "Towards a Universal Recommender System: A Linked Open Data Approach" by G. Hubert
+# This repository contains the code used in the paper "Towards a Universal Recommender System: A Linked Open Data Approach" by G. Hubert
 
 Abstract:
 Recommender systems (RSs) play a crucial role in helping users make informed decisions in the face of an ever-increasing array of choices. Most RSs are domain-specific, but domain-independent (or general purpose) RSs can be applied to a wide range of application areas, leveraging data and insights from different domains and handling large user populations. Current RS research is dominated by "improve the state-of-the-art", in terms of accuracy, speed and scale. Truly domain-independent recommender systems currently represent a gap in research, as is shown in this work. 
@@ -9,19 +9,19 @@ This paper explores the development of a general-purpose RS and the use of LOD t
 
 ## Installation and use of the GPRS framework
 
-#Install required packages (using python 3.9 ideally):
+# Install required packages (using python 3.9 ideally):
 ```
 pip install -r requirements.txt
 ```
 Clone and install the latest version of pyrdf2vec here: https://github.com/IBCNServices/pyRDF2Vec/
 
-#Dataset:
+# Dataset:
 - Download ml-1m.zip from http://files.grouplens.org/datasets/movielens/ml-1m.zip and unzip to ./data/ml-1m/
 - Download last.fm dataset from https://files.grouplens.org/datasets/hetrec2011/hetrec2011-lastfm-2k.zip and unzip to ./data/lastFM/
 - Clone https://github.com/sisinflab/LODrecsys-datasets to ./data/LODrecsys-datasets/
 - (optionally) create a DBpedia clone using blazegraph. Put the Blazegraph .jar and .jnl files in ./blazegraph or adjust the files to the correct location in the config file.
 
-#Files:
+# Files:
 - GPRS/sparql_endpoint.py: contains the SPARQL endpoint class. Connects to a SPARQL endpoint and can launch blazegraph too. Contains many utility functions such as type and attribute retrieval, candidates selection, etc. See the 'main' for examples.
 - GPRS/recommendationExp.py: contains a full pipeline from loading data to evaluating the recommender system. See the 'main' for examples.
 - GPRS/mappingExp.py: contains a full pipeline from loading data to evaluating the mapping system, with or without type filtering. See the 'main' for examples.
@@ -29,11 +29,11 @@ Clone and install the latest version of pyrdf2vec here: https://github.com/IBCNS
 - GPRS/jobPoster.py: contains utilities to sync files, dependencies, and launch and monitor jobs on the Gemini servers.
 - GPRS/localJobPoster.py: contains utilities to launch and monitor jobs on grid engine running on the local machine.
 
-#Results:
+# Results:
 - All results go into ./data/results/
-- The results used to in the paper can be found ./results
+- The results used to in the paper can be found ./results.zip
 
-#Useful commands:
+# Useful commands:
 Account storage size:
 `quota -s`
 
