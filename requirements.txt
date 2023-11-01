@@ -7,3 +7,5 @@ pykeen
 paramiko
 sparqlwrapper
 redis
+torch
+adjusttext

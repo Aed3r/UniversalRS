@@ -3,3 +3,5 @@ res/*
 id_rsa
 dbpedia/*
 virtuoso-sparql-endpoint-quickstart/*
+results/walks/*
+results/*

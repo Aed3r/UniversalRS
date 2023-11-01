@@ -1,6 +1,8 @@
 """
 item.py
 
+NOT USED ANYMORE
+
 This class is used to load data from the data sources and to transform it into a format that can be used by the recommender system.
 
 Author: Gustav Hubert

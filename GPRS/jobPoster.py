@@ -263,8 +263,8 @@ echo "Command executed in $DURATION seconds"
                 self.sftp.mkdir(REMOTE_LOGS_LOC)
             
             script_loc = os.path.join(script_folder, script_name).replace('\\', '/')
-            sge_root = "/data/ge2011.11 "  # Replace with the value you got from `echo $SGE_ROOT`
-            cmd = f"export SGE_ROOT={sge_root}; /data/ge2011.11/bin/linux-x64/qsub -o {REMOTE_LOGS_LOC} -e {REMOTE_LOGS_LOC} {script_loc}"
+            sge_root = "/data/ge2011.11 " 
+            cmd = f"export SGE_ROOT={sge_root}; /data/ge2011.11/bin/linux-x64/qsub -o {REMOTE_LOGS_LOC} -e {REMOTE_LOGS_LOC} -V {script_loc}"
             _, stdout, stderr = self.client.exec_command(cmd)
             output = stdout.read().decode()
             error = stderr.read().decode()
@@ -320,7 +320,7 @@ echo "Command executed in $DURATION seconds"
         try:
             
             while True:
-                sge_root = "/data/ge2011.11 "  # Replace with the value you got from `echo $SGE_ROOT`
+                sge_root = "/data/ge2011.11 "
                 cmd = f"export SGE_ROOT={sge_root}; /data/ge2011.11/bin/linux-x64/qstat"
                 _, stdout, stderr = self.client.exec_command(cmd)
                 output_lines = stdout.read().decode().splitlines()
@@ -388,12 +388,12 @@ echo "Command executed in $DURATION seconds"
     def run_python_job(self, command_file, command=DEFAULT_COMMAND, folder_path=DEFAULT_SYNC_FOLDER, script_name=DEFAULT_SCRIPT_NAME, requirements_path=DEFAULT_REQUIREMENTS_FILE, ignore_pattern=DEFAULT_IGNORE_PATTERN):
         """Execute the entire workflow of synchronizing, creating a job, and monitoring."""
         try:
+            # Create job script
+            self.create_job_script(command_file, command, script_name, folder_path)
+
             # Synchronize files
             self.synchronize_files(folder_path, folder_path, ignore_pattern)
             print(f"Sucessfully synchronized '{folder_path}'.")
-
-            # Create job script
-            self.create_job_script(command_file, command, script_name, folder_path)
 
             # Install requirements
             self.install_requirements(requirements_path)

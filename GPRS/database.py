@@ -1,6 +1,8 @@
 """
 database.py
 
+NOT USED ANYMORE
+
 This module defines the `DatabaseManager` class, which is used to manage the database. It provides methods to insert, update, and delete items from the database, as well as methods to import and export the database.
 
 Author: Gustav Hubert

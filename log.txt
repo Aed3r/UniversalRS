@@ -1,0 +1,254 @@
+SPARQL-based for MovieLens:
+http://dbpedia.org/ontology/Film: 3131
+failed: 137 (16 connections aborted)
+http://dbpedia.org/ontology/TelevisionShow: 9
+http://dbpedia.org/ontology/Book: 2
+http://dbpedia.org/ontology/Person: 7
+http://dbpedia.org/ontology/SportsTeam: 2
+http://dbpedia.org/ontology/Play: 1
+http://dbpedia.org/ontology/WrittenWork: 2
+http://dbpedia.org/ontology/Colour: 2
+http://dbpedia.org/ontology/Work: 4
+
+DBpedia-based for MovieLens:
+http://dbpedia.org/ontology/Film: 2988
+http://dbpedia.org/ontology/TelevisionShow: 36
+http://umbel.org/umbel/rc/Album_IBO: 7
+owl:thing: 144
+http://umbel.org/umbel/rc/Movie_CW: 11
+http://dbpedia.org/class/yago/WikicatUnitedArtistsFilms: 3
+http://dbpedia.org/class/yago/WikicatFilmsAboutJewsAndJudaism: 1
+http://umbel.org/umbel/rc/Book_CW: 4
+http://dbpedia.org/class/yago/Music107020895: 4
+http://dbpedia.org/ontology/Place: 1
+http://dbpedia.org/class/yago/Product104007894: 18
+http://dbpedia.org/ontology/Band: 1
+http://dbpedia.org/ontology/Book: 5
+http://dbpedia.org/class/yago/WikicatBritishHorrorFilms: 1
+http://dbpedia.org/class/yago/Whole100003553: 3
+http://dbpedia.org/class/yago/Wikicat1960sFantasyFilms: 1
+failed: 10
+http://dbpedia.org/class/yago/WikicatBritishNovels: 1
+http://dbpedia.org/ontology/MilitaryUnit: 1
+http://dbpedia.org/class/yago/WikicatBritishElectronicMusicGroups: 1
+http://dbpedia.org/class/yago/Person100007846: 2
+http://dbpedia.org/class/yago/WikicatItalianFilms: 3
+http://www.w3.org/2002/07/owl#Thing: 5
+http://umbel.org/umbel/rc/MusicSingle: 5
+http://dbpedia.org/ontology/Person: 3
+http://dbpedia.org/class/yago/WikicatAmericanComedyFilms: 4
+http://dbpedia.org/class/yago/WikicatAmericanFantasyFilms: 1
+http://dbpedia.org/class/yago/WikicatSavingJaneAlbums: 1
+http://dbpedia.org/class/yago/WikicatPolishComedyFilms: 1
+http://dbpedia.org/class/yago/Book106410904: 1
+http://dbpedia.org/class/yago/Wikicat2013Albums: 1
+http://umbel.org/umbel/rc/ComputerGameProgram: 2
+http://dbpedia.org/class/yago/Wikicat1951Films: 1
+http://dbpedia.org/class/yago/SocialGroup107950920: 1
+http://dbpedia.org/class/yago/WikicatBillboardHot100Number-oneSingles: 1
+http://dbpedia.org/class/yago/LanguageUnit106284225: 2
+http://dbpedia.org/ontology/SocietalEvent: 1
+http://dbpedia.org/ontology/Play: 1
+http://dbpedia.org/ontology/Work: 1
+http://dbpedia.org/class/yago/WikicatJenniferLopezAlbums: 1
+http://dbpedia.org/class/yago/Wikicat2010sDramaFilms: 1
+http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing: 1
+http://dbpedia.org/class/yago/WikicatSummitEntertainmentFilms: 1
+http://dbpedia.org/ontology/Year: 1
+http://dbpedia.org/class/yago/WikicatFilmsDirectedByJanDeBont: 1
+http://dbpedia.org/class/yago/WikicatAustralianDramaFilms: 1
+http://dbpedia.org/ontology/Colour: 1
+http://dbpedia.org/class/yago/WikicatAlbumsProducedByDanja: 1
+http://dbpedia.org/class/yago/Wikicat1983Films: 1
+http://dbpedia.org/class/yago/Writing106362953: 1
+http://dbpedia.org/ontology/Single: 1
+http://dbpedia.org/ontology/ComicsCharacter: 1
+http://dbpedia.org/class/yago/WikicatAmericanBiographicalFilms: 2
+http://dbpedia.org/class/yago/WikicatBritishMusicalFilms: 1
+http://dbpedia.org/ontology/Company: 1
+http://dbpedia.org/class/yago/WikicatBritishBlackComedyFilms: 1
+http://dbpedia.org/class/yago/Wikicat2009Singles: 1
+http://umbel.org/umbel/rc/Band_MusicGroup: 1
+http://dbpedia.org/class/yago/WikicatAustralianComedyFilms: 1
+http://dbpedia.org/class/yago/Wikicat1990sActionFilms: 1
+http://dbpedia.org/class/yago/WikicatFilmsDirectedByMikeNewell: 1
+http://dbpedia.org/ontology/Animal: 1
+
+
+
+
+SPARQL-based for LastFm:
+Types: 
+http://dbpedia.org/ontology/Band: 6412
+http://dbpedia.org/ontology/MusicalArtist: 3402
+failed: 195
+http://dbpedia.org/ontology/Person: 93
+http://dbpedia.org/ontology/Company: 2
+http://dbpedia.org/ontology/Athlete: 17
+http://dbpedia.org/ontology/MusicalWork: 13
+http://dbpedia.org/ontology/Agent: 23
+http://dbpedia.org/ontology/Criminal: 2
+http://dbpedia.org/ontology/SportsTeam: 5
+http://dbpedia.org/ontology/Artwork: 1
+http://dbpedia.org/ontology/Software: 2
+http://dbpedia.org/ontology/ChemicalCompound: 1
+http://dbpedia.org/ontology/RecordLabel: 2
+http://dbpedia.org/ontology/ArtistDiscography: 1
+http://dbpedia.org/ontology/SoccerPlayer: 2
+http://dbpedia.org/ontology/WrittenWork: 2
+http://dbpedia.org/ontology/VideoGame: 1
+http://dbpedia.org/ontology/Model: 1
+http://dbpedia.org/ontology/Film: 1
+http://dbpedia.org/ontology/Swimmer: 1
+http://dbpedia.org/ontology/Album: 1
+
+DBpedia-based for LastFM: 
+http://dbpedia.org/ontology/Agent: 556
+http://dbpedia.org/ontology/Animal: 3777
+http://dbpedia.org/ontology/MusicalArtist: 134
+owl:thing: 198
+http://umbel.org/umbel/rc/Band_MusicGroup: 13
+http://dbpedia.org/ontology/Person: 46
+http://dbpedia.org/class/yago/Person100007846: 43
+http://dbpedia.org/ontology/Band: 244
+http://dbpedia.org/ontology/Album: 4
+http://www.w3.org/2002/07/owl#Thing: 9
+failed: 70
+http://dbpedia.org/ontology/TelevisionShow: 6
+http://dbpedia.org/ontology/Film: 2
+http://dbpedia.org/ontology/Company: 2
+http://dbpedia.org/class/yago/WikicatAmericanComposers: 1
+http://dbpedia.org/class/yago/SocialGroup107950920: 17
+http://dbpedia.org/class/yago/Music107020895: 2
+http://dbpedia.org/ontology/Criminal: 2
+http://dbpedia.org/ontology/Song: 1
+http://dbpedia.org/class/yago/WikicatTranceMusicians: 2
+http://umbel.org/umbel/rc/MusicalPerformer: 2
+http://dbpedia.org/ontology/RadioStation: 1
+http://dbpedia.org/class/yago/WikicatSierraLeoneanMusicians: 1
+http://dbpedia.org/class/yago/WikicatBritishElectronicMusicGroups: 1
+http://dbpedia.org/ontology/GivenName: 1
+http://dbpedia.org/ontology/Organisation: 3
+http://dbpedia.org/class/yago/WikicatPeopleEducatedAtTheCityOfLondonSchool: 1
+http://dbpedia.org/class/yago/Absentee109757653: 1
+http://dbpedia.org/ontology/Book: 2
+http://dbpedia.org/class/yago/Wikicat1980DebutAlbums: 1
+http://dbpedia.org/class/yago/WikicatTownsAndVillagesInCountyClare: 1
+http://dbpedia.org/class/yago/Set108240169: 1
+http://dbpedia.org/ontology/ChemicalSubstance: 1
+http://dbpedia.org/class/yago/WikicatMusicalGroupsFromAthens: 1
+http://dbpedia.org/class/yago/WikicatBritishComposers: 1
+http://dbpedia.org/ontology/Comic: 1
+http://dbpedia.org/class/yago/WikicatUniversalMusicGroupArtists: 1
+http://dbpedia.org/class/yago/LanguageUnit106284225: 5
+http://dbpedia.org/ontology/Building: 1
+http://dbpedia.org/class/yago/WikicatAmericanPost-hardcoreMusicalGroups: 1
+http://dbpedia.org/ontology/Mammal: 1
+http://dbpedia.org/class/yago/Disease114070360: 1
+http://dbpedia.org/ontology/FictionalCharacter: 1
+http://umbel.org/umbel/rc/Organization: 1
+http://dbpedia.org/ontology/Holiday: 1
+http://dbpedia.org/ontology/WrittenWork: 1
+http://dbpedia.org/ontology/Single: 1
+http://dbpedia.org/class/yago/WikicatAustralianDeathMetalMusicalGroups: 1
+http://dbpedia.org/ontology/TopicalConcept: 1
+http://dbpedia.org/resource/Commando: 1
+http://dbpedia.org/ontology/MusicGenre: 1
+http://dbpedia.org/class/yago/WikicatAmericanHardRockMusicalGroups: 1
+http://dbpedia.org/class/yago/Product104007894: 2
+http://dbpedia.org/class/yago/WikicatBritishRockMusicGroups: 1
+http://umbel.org/umbel/rc/Album_IBO: 1
+http://dbpedia.org/ontology/School: 1
+http://dbpedia.org/ontology/Software: 1
+
+
+
+simple mapping exp movielens:
+Correct mappings: 480
+Incorrect mappings: 2822
+Missing mappings: 0
+
+simple mapping exp lastfm:
+Correct mappings: 6449
+Incorrect mappings: 3727
+Missing mappings: 4
+
+mapping lastfm with type: 80.59%
+
+
+
+movielens_random_uniform_200w_200v_4d_rev:
+Precision@10: 0.0432864297638922
+Recall@10: 0.027248081681167498
+F1@10: 0.02864125797227725
+Hit@10: 0.3181492964464584
+nDCG@10: 0.3056224355321601
+Skipped users@10: 0
+
+lastfm_random_uniform_200w_200v_4d_rev:
+Precision@10: 0.020674879485806107
+Recall@10: 0.11585431173004819
+F1@10: 0.033936064827869865
+Hit@10: 0.18532404927691484
+nDCG@10: 0.1909634570324095
+Skipped users@10: 0
+
+
+
+
+
+candidate sel movielens binary search:
+Number of Successful Searches: 2926
+Number of Failed Searches: 375
+Average Number of Queries Necessary: 4.838004101161996
+Average Time Taken (seconds): 11.976247436773763
+Average Number of Candidate Items: 14.575529733424471
+Score Frequency: [(1, 34339), (2, 3163), (3, 1735), (4, 1171), (5, 678), (6, 382), (7, 957), (8, 40), (9, 86), (10, 55), (11, 40), (12, 2)]
+Attribute Specificity: 1.5251125492402926
+Accuracy wrt existing mapping: 0.17040465230827037
+Total found from existing mapping: 7361
+
+candidate sel movielens divide and conquer on MovieLens:
+Number of Successful Searches: 2946
+Number of Failed Searches: 355
+Average Number of Queries Necessary: 112.0
+Average Time Taken (seconds): 94.44828241683648
+Average Number of Candidate Items: 15.0
+Score Frequency: [(3, 3342), (4, 12902), (5, 12344), (6, 6675), (7, 3336), (8, 3508), (9, 1172), (10, 621), (11, 252), (12, 35), (13, 3)]
+Attribute Specificity: 5.3136229916270645
+Accuracy wrt existing mapping: 0.24648110432224554
+Total found from existing mapping: 10892
+
+
+
+average time:
+ - mapping: ~2.74s
+ - type retrieval: ~1.2s
+ - schema summarization: n/a
+ - candidate selection: ~25s
+ - walk extraction: ~125s * n (15) = ~30minutes
+ - embedding: 1.06s * epochs (10) = ~10s
+ - recommendation: quick
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% background
+% what is current situation
+% what is the potential problem/drawback of current situation/improvement of current situation (here you can also say some real case example, (Roco) or remember I mentioned some real law cases where the valuer made mistakes and then caused big problem -> because of the data they put in is very subjective, etc. so in order to avoid this kind of problem, we use AI tool to popup the calculated result....)
+% What is the current research of it, or, why this is still worth to research/analysis.
+% Based on these situation, we want to know the posibility of balbala, thus we formalize our main reasearch question as below.
+
+% love you!
+% <3 <3333

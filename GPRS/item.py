@@ -1,6 +1,8 @@
 """
 item.py
 
+NOT USED ANYMORE
+
 This module defines the `Item` class, which represents an item with a title, source, and tags. Each item is assigned a unique ID upon creation. The class provides methods to add and remove tags, update the title and source, and retrieve the tags associated with the item. The class also implements a string representation for easy printing.
 
 Author: Gustav Hubert
