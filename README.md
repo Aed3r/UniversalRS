@@ -41,7 +41,7 @@ Use databus.jar to download dbpedia files:
 `java -jar databus-client-v2.1-beta.jar -s query.sparql -e https://databus.dbpedia.org/sparql -t ./converted`
 
 Open blazegraph interface via SSH tunnel:
-`ssh -L 8080:10.20.51.34:9999 user@gemini.science.uu.nl` and go to http://localhost:8080/blazegraph/
+`ssh -L 8080:<blazegraph URL>:<blazegraph port> user@<server adress>` and go to http://localhost:8080/blazegraph/
 
 Run Blazegraph:
 `java -server -Xmx70g -Djetty.port=19999 -jar blazegraph.jar` 
@@ -49,7 +49,7 @@ Run Blazegraph:
 Find what process is using blazegraph.jnl (kill to start new blazegraph instance):
 `fuser -v blazegraph.jnl`
 
-Find what process is using the port:
+Find what process is using the port 19999:
 `lsof -i:19999`
 
 Grid engine monitoring:
